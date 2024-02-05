@@ -1,0 +1,68 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 150%;
+    height: 100vh;
+    background-image: url(./green-leaves-vector-1191967.jpg);
+    object-position: bottom;
+    animation: city 5s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+    z-index: 1;
+  }
+
+
+
+  @keyframes city {
+    0%,
+    100% {
+      
+    }
+
+    75% {
+     
+    }
+  }
+
+
+  .mario {
+    height: 110px;
+    margin-top: 830px;
+    /* transform: translateY(250px); */
+    animation: motor 12s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    background-repeat: no-repeat;
+    z-index: 2;
+  }
+
+  @keyframes motor {
+    0% {
+      transform: translateY(-250px) translateX(-130%);
+    }
+
+    
+
+    50% {
+      transform: translateY(-250px) translateX(100vw) rotateY(0deg)
+        rotateZ(0deg);
+    }
+
+    51% {
+      transform: translateY(-260px) translateX(100vw) rotateY(180deg)
+        scale(0.9);
+    }
+   
+
+    100% {
+      transform: translateY(-240px) translateX(-130%) rotateY(180deg)
+        scale(0.9);
+    }
+  }
+
+
+
